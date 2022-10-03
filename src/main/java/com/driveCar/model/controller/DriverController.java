@@ -42,8 +42,8 @@ public class DriverController {
     }
 
     @GetMapping("/drivers")
-    public List<DriverDto> getAllDriver() {
-        return driverService.getAllDriver();
+    public ResponseEntity<List<DriverDto>> getAllDriver() {
+        return ResponseEntity.ok(driverService.getAllDriver());
     }
 
     @GetMapping("/drivers/{uuid}")

@@ -1,17 +1,17 @@
-GET http://localhost:8080/api/testdriver
+GET http://localhost:8082/api/testdriver
 
 ###
-POST http://localhost:8080/api/drivers
+POST http://localhost:8082/api/drivers
 Content-Type: application/json
 
 {
-  "firstname": "Frank",
-  "lastname": "Galager",
+  "firstName": "Frank",
+  "lastName": "Galager",
   "age": "48"
 }
 
 ###
-GET http://localhost:8080/api/testcar
+GET http://localhost:8082/api/testcar
 
 ###
-GET http://localhost:8080/api/drivers
+GET http://localhost:8082/api/drivers

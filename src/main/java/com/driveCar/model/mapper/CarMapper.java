@@ -9,6 +9,7 @@ import java.util.UUID;
 
 @Component
 public class CarMapper {
+
     public Car inputToCar(CarInput carInput) {
 
         Car car = new Car();

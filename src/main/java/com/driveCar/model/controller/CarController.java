@@ -40,8 +40,8 @@ public class CarController {
     }
 
     @GetMapping("/cars")
-    public List<CarDto> getAllCar() {
-        return carService.getAllCar();
+    public ResponseEntity<List<CarDto>> getAllCar() {
+        return ResponseEntity.ok(carService.getAllCar());
     }
 
     @GetMapping("/cars/{uuid}")
