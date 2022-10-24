@@ -23,7 +23,7 @@ public class DriverController {
     private final DriverService driverService;
 
     @GetMapping("/testdriver")
-    public String pong() {
+    public String driver() {
         return "driver";
     }
 
